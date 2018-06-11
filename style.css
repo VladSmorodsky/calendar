@@ -1,0 +1,46 @@
+div.calendar{
+    display: inline-block;
+    margin: 2%;
+    text-align: center;
+}
+
+div.calendar, hr{
+    color: #af0534;
+}
+
+h1.selected_year{
+    text-align: center;
+}
+
+table.calendar{
+    height: 200px;
+}
+
+td, th{
+    color: black;
+}
+
+/* Table cells style */
+td{
+    width: 30px;
+}
+
+td.day{
+    border: white 1px solid;
+    background-color: #d0e5f6;
+}
+
+td.rest_day{
+    background-color: #2a5c95;
+    color: white;
+}
+
+td.event_day{
+    background-color: #af0534;
+}
+td.day:hover{
+    border: #af0534 1px solid;
+}
+
+/* -------------------- */
+
