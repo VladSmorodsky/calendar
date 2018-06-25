@@ -47,7 +47,7 @@ echo '</div>';
 ?>
 
 <!-- MODAL FORM (will be created) -->
-<!--div class="event_creator">
+<div class="event_creator">
   <div class="inner">
   </div>
   <form id="event_form" action="" method="post">
@@ -56,7 +56,7 @@ echo '</div>';
     <input type="text">
     <input type="submit" name="" value="Add">
   </form>
-</div-->
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
