@@ -47,12 +47,12 @@ echo '</div>';
 ?>
 
 <!-- MODAL FORM (will be created) -->
-<div class="event_creator">
-  <div class="inner">
+<div class="" id="modal-div">
+  <div class="" id="modal-background">
   </div>
-  <form id="event_form" action="" method="post">
-    <input type="date" name="date">
-    <input type="text" name="event">
+  <form class="" id="create-event-form" action="" method="post">
+    <input type="date" name="date" value="">
+    <input type="text" name="event" value="">
     <input type="text">
     <input type="submit" name="" value="Add">
   </form>

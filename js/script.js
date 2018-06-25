@@ -1,5 +1,26 @@
 $(document).ready(function(){
   readAllCalendarEvents();
+
+
+  $("table").mouseup(function(){
+      return ($(this).prevAll().text());
+  });
+
+  $("td.day").click(function(){
+      $("div#modal-div").toggleClass("event_creator");
+      $("form#create-event-form").toggleClass("event_form").css("display","block");
+      $("div#modal-background").toggleClass("inner");
+
+      day = ($(this).text().length == 1) ? "0".concat($(this).text()) : $(this).text();
+      m_y = $(this).parents("table").prevAll().text();
+
+      date = new Date(day+" "+m_y);
+      month_num = date.getMonth()+1;
+      month = (month_num < 10) ? "0".concat(month_num) : month_num;
+
+      var curr_date = date.getFullYear()+"-"+month+"-"+day;
+      $("input[type=date]").val(curr_date);
+  });
 });
 
 
@@ -9,7 +30,6 @@ function readAllCalendarEvents(){
             resp = JSON.parse(responseTxt);
             for( var record_num = 0; record_num < resp.records.length; record_num++ ){
               var date = resp.records[record_num].date.split("-");
-
               var current_year = $("h1.selected_year").text();
               if (current_year == date[0]){
                 var event_name = resp.records[record_num].event;

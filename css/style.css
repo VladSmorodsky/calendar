@@ -47,6 +47,7 @@ td.day:hover{
 }
 
 /* -------------------- */
+/*    Modal Form    */
 
 .inner {
       position: absolute;
@@ -54,11 +55,15 @@ td.day:hover{
       right: 0px;
       top: 0px;
       bottom: 0px;
-      background: blue;
+      background: black;
       opacity: 0.5;
-      filter: alpha(opacity=30);
+
     }
-#event_form {
+#create-event-form{
+  display: none;
+}
+
+.event_form {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -78,6 +83,7 @@ td.day:hover{
     height: 100%;
     z-index: 999;
 }
+
 
 /*FOR ANOTHER CALENDAR*/
 /* css for calendar */

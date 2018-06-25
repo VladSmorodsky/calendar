@@ -31,8 +31,8 @@ class Calendar
     public function show() {
 
         //Month and year caption
-        $output = '<div class="calendar"><table class="calendar"';
-        $output .= '<span id="month_name">'  .   $this->date_info['month']   .   ' ' . $this->year   .   '</span>';
+        $output = '<div class="calendar"><table class="calendar">';
+        $output .= '<h3 class="month_name">'  .   $this->date_info['month']   .   ' ' . $this->year   .   '</h3>';
         $output .= '<tr>';
 
 
