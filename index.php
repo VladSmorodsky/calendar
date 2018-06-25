@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calendar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -23,9 +23,11 @@
 </form>
 
 <?php
-include_once("objects/Calendar.php");
+include_once("objects/calendar.php");
+
 $year = 0;
 
+//include_once("objects/calendar_rus.php")
 if (empty($_POST['year'])){
     $year = 2018;
 }
@@ -41,7 +43,23 @@ for ($i = 1; $i <=12; $i++){
 }
 
 echo '</div>';
+
 ?>
+
+<!-- MODAL FORM (will be created) -->
+<!--div class="event_creator">
+  <div class="inner">
+  </div>
+  <form id="event_form" action="" method="post">
+    <input type="date" name="date">
+    <input type="text" name="event">
+    <input type="text">
+    <input type="submit" name="" value="Add">
+  </form>
+</div-->
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>

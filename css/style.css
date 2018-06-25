@@ -1,0 +1,158 @@
+div.calendar{
+    display: inline-block;
+    margin: 2%;
+    text-align: center;
+}
+
+div.calendar, hr{
+    color: #00328d;
+}
+
+h1.selected_year{
+    text-align: center;
+}
+
+table.calendar{
+    height: 200px;
+}
+
+th {
+  color: #9494d0;
+}
+
+td{
+    color: black;
+}
+
+/* Table cells style */
+td{
+    width: 30px;
+}
+
+td.day{
+    border: white 1px solid;
+    background-color: #d0e5f6;
+}
+
+td.rest_day{
+    background-color: #9494d0;
+    color: white;
+}
+
+td.event_day{
+    background-color: #af0534;
+}
+td.day:hover{
+    border: #af0534 1px solid;
+}
+
+/* -------------------- */
+
+.inner {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+      background: blue;
+      opacity: 0.5;
+      filter: alpha(opacity=30);
+    }
+#event_form {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 120px;
+      width: 300px;
+      border: 1px solid black;
+      padding: 5px 5px 5px 55px;
+      margin: 0 auto;
+    }
+.event_creator{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+/*FOR ANOTHER CALENDAR*/
+/* css for calendar */
+.b-calendar {
+    font: 14px/1.2 Arial, sans-serif;
+    background: #f9f9f9;
+}
+.b-calendar--along {
+    width: 300px;
+    padding: 30px 40px;
+    margin: 50px auto;
+}
+.b-calendar--many {
+    padding: 20px;
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px 20px;
+}
+
+span{
+    font-size: 16pt;
+}
+
+.b-calendar__title {
+    text-align: center;
+    margin: 0 0 20px;
+}
+.b-calendar__year {
+    font-weight: bold;
+    color: #333;
+}
+.b-calendar__tb {
+    width: 100%;
+}
+.b-calendar__head {
+    font: bold 14px/1.2 Arial, sans-serif;
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #c0c0c0;
+}
+.b-calendar__np {
+    padding: 5px;
+}
+.b-calendar__day {
+    font: 14px/1.2 Arial, sans-serif;
+    padding: 8px 5px;
+    text-align: left;
+}
+.b-calendar__weekend {
+    color: red;
+}
+
+td div{
+    text-align: center;
+}
+
+td.b-calendar__day:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.t {
+    background-color: red;
+}
+
+.db_date{
+    background-color: black;
+}
+
+div.options{
+    position: fixed;
+    background-color: #cccccc;
+    top:0;
+    left:0;
+    border-bottom-right-radius: 10px;
+    display: inline;
+}

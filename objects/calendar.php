@@ -18,21 +18,23 @@ class Calendar
     private $date_info;
     private $day_of_week;
 
-    public function __construct($year, $month, $days_of_week = array('S','M','T','W', 'T', 'F', 'S')){
+    public function __construct($year, $month, $days_of_week = array('ПН','ВТ','СР','ЧТ', 'ПТ', 'СБ', 'ВС')){
 
         $this->month = $month;
         $this->year = $year;
         $this->days_of_week = $days_of_week;
         $this->num_days = cal_days_in_month(CAL_GREGORIAN, $this->month, $this->year);
         $this->date_info = getdate(strtotime('first day of', mktime(0,0,0,$this->month, 1, $this->year)));
-        $this->day_of_week = $this->date_info['wday'];
+        $this->day_of_week = $this->date_info['wday']-1;
     }
 
     public function show() {
+
         //Month and year caption
         $output = '<div class="calendar"><table class="calendar"';
-        $output .= '<strong>'  .   $this->date_info['month']   .   ' ' . $this->year   .   '</strong>';
+        $output .= '<span id="month_name">'  .   $this->date_info['month']   .   ' ' . $this->year   .   '</span>';
         $output .= '<tr>';
+
 
         //Days of the week header
         foreach ($this->days_of_week as $day) {
@@ -43,7 +45,11 @@ class Calendar
         $output .= '</tr><hr><tr>';
 
         //If the first day of a month doesn`t fail on a Sunday, then we need to fill beginning space using colspan
-        if ($this->day_of_week > 0) {
+        if ($this->day_of_week != 0) {
+            if ($this->day_of_week == -1) {
+              $this->day_of_week = 6;
+              // code...
+            }
             $output .= '<td colspan="' .   $this->day_of_week  .   '"></td>';
         }
 
@@ -58,7 +64,7 @@ class Calendar
                 $output .= '</tr><tr>';
             }
 
-            if ($this->day_of_week == 0 || $this->day_of_week == 6){
+            if ($this->day_of_week == 5 || $this->day_of_week == 6){
                 $output .= '<td class="day rest_day">'   .   $current_day    .   '</td>';
             }
             else {
@@ -86,5 +92,3 @@ class Calendar
     }
 }
 ?>
-
-
