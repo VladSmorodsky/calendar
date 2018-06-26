@@ -20,6 +20,14 @@ $(document).ready(function(){
       var curr_date = date.getFullYear()+"-"+month+"-"+day;
       $("input[type=date]").val(curr_date);
   });
+
+  $("div#modal-background").click(function(){
+    $("div#modal-div").toggleClass("event_creator");
+    $("form#create-event-form").toggleClass("event_form").css("display","block");
+    $("div#modal-background").toggleClass("inner");
+    $("div.div-create-event").toggle();
+  });
+
 });
 
 
