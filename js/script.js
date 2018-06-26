@@ -1,7 +1,5 @@
 $(document).ready(function(){
   readAllCalendarEvents();
-
-
   $("table").mouseup(function(){
       return ($(this).prevAll().text());
   });
@@ -38,7 +36,6 @@ function readAllCalendarEvents(){
                 selectedDay.attr("title", event_name).css({"background-color":"#00328d", "color":"white"});
               }
             }
-
     if(statusTxt == "error")
             alert("Error: " + xhr.status + ": " + xhr.statusText);
   });

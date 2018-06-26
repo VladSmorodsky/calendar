@@ -58,23 +58,33 @@ td.day:hover{
       background: black;
       opacity: 0.5;
 
-    }
+}
+
+#modal-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #create-event-form{
   display: none;
+
+}
+
+#modal-background{
+  z-index: -1;
+}
+
+.div-create-event{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .event_form {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      height: 120px;
-      width: 300px;
-      border: 1px solid black;
-      padding: 5px 5px 5px 55px;
-      margin: 0 auto;
-    }
+  width: 300px;
+}
+
 .event_creator{
     position: fixed;
     left: 0;
@@ -83,6 +93,91 @@ td.day:hover{
     height: 100%;
     z-index: 999;
 }
+
+.form-wrapper{
+  position: relative;
+  background-color: white;
+  border-radius: 3%;
+  border: 3px #9494d0 dashed;
+}
+
+.form-wrapper * {
+  margin: 0;
+}
+
+.form-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 70px;
+  background-color: #9494d0;
+  color: white;
+  text-align: left;
+  border-radius: 3% 3% 0 0;
+
+}
+
+h2#event-creation{
+  background-color: #9494d0;
+}
+
+.form-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 250px;
+}
+
+.input-el{
+  border: 1px #DCDCDC solid;
+  margin: 6%;
+  text-align: center;
+  padding: 3% 0;
+}
+
+div.input-el input[type=text], div.input-el input[type=date], div.input-el textarea{
+  width: 250px;
+  margin: 3%;
+}
+
+div.input-el textarea{
+  width: 260px;
+  height: 80px;
+  padding: 1px;
+}
+
+.form-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #F5F5F5;
+  border-radius: 3%;
+  border-top: 1px solid #DCDCDC;
+}
+
+button {
+  border: 0;
+}
+
+button#event-creation-submit{
+  width: 50%;
+  background-color: #9494d0;
+  color: white;
+  padding: 3%;
+  border-radius: 3%;
+  text-transform: uppercase;
+  border: 1px #9494d0 solid;
+}
+
+button#event-creation-submit:hover{
+  background-color: white;
+  color: #9494d0;
+}
+
+
 
 
 /*FOR ANOTHER CALENDAR*/
