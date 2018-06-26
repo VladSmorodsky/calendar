@@ -50,12 +50,26 @@ echo '</div>';
 <div class="" id="modal-div">
   <div class="" id="modal-background">
   </div>
-  <form class="" id="create-event-form" action="" method="post">
-    <input type="date" name="date" value="">
-    <input type="text" name="event" value="">
-    <input type="text">
-    <input type="submit" name="" value="Add">
-  </form>
+  <div class="div-create-event">
+    <div class="form-wrapper">
+      <div class="form-header">
+        <h2 id="event-creation">Event creation</h2>
+      </div>
+      <div class="form-body">
+        <div class="input-el">
+          <form class="" id="create-event-form" action="" method="post">
+            <input type="date" name="date" value="">
+            <input type="text" name="event" value="" placeholder="Enter your event name">
+            <textarea name="name" rows="" cols="" placeholder="Enter event`s description"></textarea>
+          </form>
+        </div>
+      </div>
+      <div class="form-footer">
+        <!--input type="submit" name="" value="Add" -->
+        <button id="event-creation-submit" type="submit" name="button">Create event</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script src="js/jquery.min.js"></script>
