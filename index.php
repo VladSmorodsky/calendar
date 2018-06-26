@@ -51,7 +51,7 @@ echo '</div>';
   <div class="" id="modal-background">
   </div>
   <div class="div-create-event">
-    <div class="form-wrapper">
+    <div id="form-wrapper" class="form-wrapper">
       <div class="form-header">
         <h2 id="event-creation">Event creation</h2>
       </div>

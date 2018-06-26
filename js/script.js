@@ -8,6 +8,7 @@ $(document).ready(function(){
       $("div#modal-div").toggleClass("event_creator");
       $("form#create-event-form").toggleClass("event_form").css("display","block");
       $("div#modal-background").toggleClass("inner");
+      $("div.div-create-event").css("display","flex");
 
       day = ($(this).text().length == 1) ? "0".concat($(this).text()) : $(this).text();
       m_y = $(this).parents("table").prevAll().text();

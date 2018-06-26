@@ -48,6 +48,11 @@ td.day:hover{
 
 /* -------------------- */
 /*    Modal Form    */
+.div-create-event{
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
 
 .inner {
       position: absolute;
@@ -66,8 +71,7 @@ td.day:hover{
   justify-content: center;
 }
 
-#create-event-form{
-  display: none;
+div#form-wrapper{
 
 }
 
@@ -75,11 +79,7 @@ td.day:hover{
   z-index: -1;
 }
 
-.div-create-event{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .event_form {
   width: 300px;
