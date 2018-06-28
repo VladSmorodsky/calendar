@@ -1,6 +1,5 @@
 $(document).ready(function(){
   readAllCalendarEvents();
-  alert(Number("01"));
   $("table").mouseup(function(){
       return ($(this).prevAll().text());
   });
