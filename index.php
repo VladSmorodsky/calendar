@@ -59,15 +59,17 @@ echo '</div>';
         <div class="input-el">
           <form class="" id="create-event-form" action="" method="post">
             <input type="date" name="date" value="">
-            <input type="text" name="event" value="" placeholder="Enter your event name">
-            <textarea name="name" rows="" cols="" placeholder="Enter event`s description"></textarea>
+            <input type="text" name="event" value="" placeholder="Enter your event`s name">
+            <input type="text" name="importance" value="" placeholder="Enter event`s importance">
+            <textarea name="description" rows="" cols="" placeholder="Enter event`s description"></textarea>
+            <div class="form-footer">
+              <!--input type="submit" name="" value="Add" -->
+              <button id="event-creation-submit" type="submit" name="button">Create event</button>
+            </div>
           </form>
         </div>
       </div>
-      <div class="form-footer">
-        <!--input type="submit" name="" value="Add" -->
-        <button id="event-creation-submit" type="submit" name="button">Create event</button>
-      </div>
+
     </div>
   </div>
 </div>

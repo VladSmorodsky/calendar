@@ -10,6 +10,7 @@ div.calendar, hr{
 
 h1.selected_year{
     text-align: center;
+    color: #00328d;
 }
 
 table.calendar{
@@ -127,25 +128,25 @@ h2#event-creation{
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 250px;
 }
 
 .input-el{
   border: 1px #DCDCDC solid;
-  margin: 6%;
   text-align: center;
-  padding: 3% 0;
 }
 
 div.input-el input[type=text], div.input-el input[type=date], div.input-el textarea{
   width: 250px;
+  height: 30px;
   margin: 3%;
+  outline-color: #DCDCDC;
 }
 
 div.input-el textarea{
   width: 260px;
   height: 80px;
   padding: 1px;
+  resize: none;
 }
 
 .form-footer{
